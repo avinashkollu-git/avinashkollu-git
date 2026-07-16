@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Digital design and silicon implementation - I build synthesizable RTL in Verilog,
+  Digital design and silicon implementation. I build synthesizable RTL in Verilog,
   verify it with self-checking testbenches, and read the waveforms.
 </p>
 
@@ -18,13 +18,13 @@
 
 ### What I work on
 
-- **RTL design** in Verilog - pipelines, FSMs, arbiters, serial interfaces
-- **Computer architecture** - RISC-V, pipelining, forwarding, hazards, memory
-- **Verification** - self-checking testbenches, waveform &amp; timing analysis
-- **CDC** - gray-code pointers, multi-flop synchronizers, async FIFOs
+- **RTL design** in Verilog: pipelines, FSMs, arbiters, serial interfaces
+- **Computer architecture**: RISC-V, pipelining, forwarding, hazards, memory
+- **Verification**: self-checking testbenches, waveform &amp; timing analysis
+- **CDC**: gray-code pointers, multi-flop synchronizers, async FIFOs
 
 I work with a fully open-source hardware flow: **Icarus Verilog** for simulation,
-**GTKWave** for waveforms, and **Yosys** for synthesis checks - so every project
+**GTKWave** for waveforms, and **Yosys** for synthesis checks, so every project
 below both *simulates* and *synthesizes*.
 
 ---
@@ -47,10 +47,10 @@ one-line `make test`.
 
 | Project | What it is | Highlights |
 |---|---|---|
-| **[High-Performance-LLM-Systems](https://github.com/avinashkollu-git/High-Performance-LLM-Systems)** | Llama-3 inference on Apple M4 silicon | Roofline model of the memory-bandwidth ceiling, MLX benchmark harness (TTFT / decode tok-s / peak memory), quantization trade-offs |
+| **[High-Performance-LLM-Systems](https://github.com/avinashkollu-git/High-Performance-LLM-Systems)** | Llama-3 inference on Apple M4 silicon | Roofline model of the memory-bandwidth ceiling, MLX benchmark harness (TTFT / decode tok/s / peak memory), quantization trade-offs |
 
-The same reasoning silicon uses - arithmetic intensity, the memory wall, roofline
-analysis - applied to real inference on Apple Silicon.
+The same reasoning silicon uses (arithmetic intensity, the memory wall, roofline
+analysis), applied to real inference on Apple Silicon.
 
 ---
 
