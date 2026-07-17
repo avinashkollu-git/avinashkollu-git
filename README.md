@@ -11,6 +11,7 @@
 
 <p align="center">
   <a href="mailto:avinashkollu123@gmail.com"><img src="https://img.shields.io/badge/Email-avinashkollu123%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="https://github.com/openhwgroup/cve2/pull/334"><img src="https://img.shields.io/badge/OpenHW-CVE2%20Contributor-1f6feb?style=flat-square&logo=github&logoColor=white"></a>
   <img src="https://img.shields.io/badge/Focus-RTL%20%7C%20VLSI%20%7C%20Computer%20Architecture-1f6feb?style=flat-square">
 </p>
 
@@ -51,6 +52,12 @@ one-line `make test`.
 
 The same reasoning silicon uses (arithmetic intensity, the memory wall, roofline
 analysis), applied to real inference on Apple Silicon.
+
+---
+
+### Open Source
+
+- **[OpenHW CVE2 (RISC-V core)](https://github.com/openhwgroup/cve2/pull/334)**: contributed a merged, maintainer-approved fix (IEEE 1800 `$fatal` standards compliance) to OpenHW's CVE2 RISC-V core, re-verified by the maintainer on Verilator and Questa. Official **OpenHW Foundation Contributor**.
 
 ---
 
