@@ -6,7 +6,7 @@
 
 <p align="center">
   Digital design and silicon implementation. I build synthesizable RTL in Verilog,
-  verify it with self-checking testbenches, and read the waveforms.
+  verify it with UVM and formal property proofs, and read the waveforms.
 </p>
 
 <p align="center">
@@ -24,9 +24,11 @@
 - **Verification**: UVM (driver, monitor, scoreboard, golden reference model), formal property verification (assertions, cover, bounded model checking &amp; temporal induction), constrained-random &amp; self-checking testbenches
 - **CDC**: gray-code pointers, multi-flop synchronizers, async FIFOs
 
-I work with a fully open-source hardware flow: **Icarus Verilog** for simulation,
-**GTKWave** for waveforms, and **Yosys** for synthesis checks, so every project
-below both *simulates* and *synthesizes*.
+I work with a fully open-source hardware flow: **Icarus Verilog** and **Verilator**
+for simulation, the **Accellera UVM** library for constrained-random verification,
+**Yosys + yosys-smtbmc + z3** for synthesis checks and formal proofs, and **GTKWave**
+for waveforms. Every project *simulates*, *synthesizes*, and where it matters, is
+*formally proven*.
 
 ---
 
