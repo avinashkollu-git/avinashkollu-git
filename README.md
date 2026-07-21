@@ -57,7 +57,11 @@ analysis), applied to real inference on Apple Silicon.
 
 ### Open Source
 
-- **[OpenHW CVE2 (RISC-V core)](https://github.com/openhwgroup/cve2/pull/334)**: contributed a merged, maintainer-approved fix (IEEE 1800 `$fatal` standards compliance) to OpenHW's CVE2 RISC-V core, re-verified by the maintainer on Verilator and Questa. Official **OpenHW Foundation Contributor**.
+Contributions across three respected RISC-V organizations, spanning RTL, hardware documentation, and verification tooling:
+
+- **[OpenHW CVE2 (RISC-V core)](https://github.com/openhwgroup/cve2/pull/334)** (merged): a maintainer-approved fix for IEEE 1800 `$fatal` standards compliance in OpenHW's CVE2 RISC-V core, re-verified by the maintainer on Verilator and Questa. Official **OpenHW Foundation Contributor**.
+- **[OpenHW core-v-mcu](https://github.com/openhwgroup/core-v-mcu/pull/371)** (open PR): documented how the APB Timer implements the RISC-V machine timer (`mtime` / `mtimecmp`, MTIME), covering the register mapping and the firmware programming sequence, grounded in the RTL.
+- **[CHIPS Alliance riscv-dv](https://github.com/chipsalliance/riscv-dv/pull/1035)** (open PR): a Python fix so the CSR test generator reads read-only CSRs instead of emitting illegal writes that hang the test, motivated by lowRISC/ibex#1337.
 
 ---
 
