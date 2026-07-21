@@ -38,7 +38,7 @@ below both *simulates* and *synthesizes*.
 | **[async-fifo](https://github.com/avinashkollu-git/async-fifo)** | Sync + async (CDC) FIFO | Gray-code pointers, 2-flop synchronizers, registered flags, 167/63 MHz verified |
 | **[spi-master](https://github.com/avinashkollu-git/spi-master)** | Configurable SPI master | All four modes (CPOL/CPHA), programmable clock divider, full-duplex, verified both directions |
 | **[uart-controller](https://github.com/avinashkollu-git/uart-controller)** | Parameterized 8N1 UART | Configurable baud, mid-bit sampling, input synchronizer, loopback tested |
-| **[uvm-fifo-verification](https://github.com/avinashkollu-git/uvm-fifo-verification)** | UVM testbench for a sync FIFO | Layered UVM 1.2 env (driver, monitor, scoreboard), golden-queue reference model, local self-checking TB passes (1020 checks, 0 errors) |
+| **[uvm-fifo-verification](https://github.com/avinashkollu-git/uvm-fifo-verification)** | UVM testbench for a sync FIFO | Layered UVM env (driver, monitor, scoreboard, golden-queue model), runs to PASS on Verilator + Accellera UVM (1326 checks, 0 errors) |
 
 Each repo ships **RTL + self-checking testbench + waveform + README**, and runs with a
 one-line `make test`.
