@@ -21,7 +21,7 @@
 
 - **RTL design** in Verilog: pipelines, FSMs, arbiters, serial interfaces
 - **Computer architecture**: RISC-V, pipelining, forwarding, hazards, memory
-- **Verification**: self-checking testbenches, waveform &amp; timing analysis
+- **Verification**: UVM (driver, monitor, scoreboard, golden reference model), constrained-random &amp; self-checking testbenches, waveform &amp; timing analysis
 - **CDC**: gray-code pointers, multi-flop synchronizers, async FIFOs
 
 I work with a fully open-source hardware flow: **Icarus Verilog** for simulation,
@@ -70,7 +70,10 @@ Contributions across three respected RISC-V organizations, spanning RTL, hardwar
 
 <p>
   <img src="https://img.shields.io/badge/Verilog-HDL-orange?style=flat-square">
+  <img src="https://img.shields.io/badge/SystemVerilog-HDL-orange?style=flat-square">
+  <img src="https://img.shields.io/badge/UVM-verification-e11d48?style=flat-square">
   <img src="https://img.shields.io/badge/RISC--V-RV32I-283272?style=flat-square&logo=riscv&logoColor=white">
+  <img src="https://img.shields.io/badge/Verilator-sim-3fb950?style=flat-square">
   <img src="https://img.shields.io/badge/Icarus%20Verilog-sim-3fb950?style=flat-square">
   <img src="https://img.shields.io/badge/GTKWave-waveforms-58a6ff?style=flat-square">
   <img src="https://img.shields.io/badge/Yosys-synthesis-yellow?style=flat-square">
