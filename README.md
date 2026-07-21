@@ -21,7 +21,7 @@
 
 - **RTL design** in Verilog: pipelines, FSMs, arbiters, serial interfaces
 - **Computer architecture**: RISC-V, pipelining, forwarding, hazards, memory
-- **Verification**: UVM (driver, monitor, scoreboard, golden reference model), constrained-random &amp; self-checking testbenches, waveform &amp; timing analysis
+- **Verification**: UVM (driver, monitor, scoreboard, golden reference model), formal property verification (assertions, cover, bounded model checking &amp; temporal induction), constrained-random &amp; self-checking testbenches
 - **CDC**: gray-code pointers, multi-flop synchronizers, async FIFOs
 
 I work with a fully open-source hardware flow: **Icarus Verilog** for simulation,
@@ -38,7 +38,7 @@ below both *simulates* and *synthesizes*.
 | **[async-fifo](https://github.com/avinashkollu-git/async-fifo)** | Sync + async (CDC) FIFO | Gray-code pointers, 2-flop synchronizers, registered flags, 167/63 MHz verified |
 | **[spi-master](https://github.com/avinashkollu-git/spi-master)** | Configurable SPI master | All four modes (CPOL/CPHA), programmable clock divider, full-duplex, verified both directions |
 | **[uart-controller](https://github.com/avinashkollu-git/uart-controller)** | Parameterized 8N1 UART | Configurable baud, mid-bit sampling, input synchronizer, loopback tested |
-| **[uvm-fifo-verification](https://github.com/avinashkollu-git/uvm-fifo-verification)** | UVM testbench for a sync FIFO | Layered UVM env (driver, monitor, scoreboard, golden-queue model), runs to PASS on Verilator + Accellera UVM (1326 checks, 0 errors) |
+| **[uvm-fifo-verification](https://github.com/avinashkollu-git/uvm-fifo-verification)** | UVM + formal verification of a sync FIFO | Layered UVM env (driver, monitor, scoreboard, golden-queue model) passing on Verilator + Accellera UVM (1326 checks, 0 errors); FIFO invariants formally proven (temporal induction) with Yosys + z3 |
 
 Each repo ships **RTL + self-checking testbench + waveform + README**, and runs with a
 one-line `make test`.
@@ -72,6 +72,7 @@ Contributions across three respected RISC-V organizations, spanning RTL, hardwar
   <img src="https://img.shields.io/badge/Verilog-HDL-orange?style=flat-square">
   <img src="https://img.shields.io/badge/SystemVerilog-HDL-orange?style=flat-square">
   <img src="https://img.shields.io/badge/UVM-verification-e11d48?style=flat-square">
+  <img src="https://img.shields.io/badge/Formal-yosys--smtbmc%20%2B%20z3-8b5cf6?style=flat-square">
   <img src="https://img.shields.io/badge/RISC--V-RV32I-283272?style=flat-square&logo=riscv&logoColor=white">
   <img src="https://img.shields.io/badge/Verilator-sim-3fb950?style=flat-square">
   <img src="https://img.shields.io/badge/Icarus%20Verilog-sim-3fb950?style=flat-square">
