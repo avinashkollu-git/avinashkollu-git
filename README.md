@@ -60,11 +60,12 @@ analysis), applied to real inference on Apple Silicon.
 
 ### Open Source
 
-Contributions across three respected RISC-V organizations, spanning RTL, hardware documentation, and verification tooling:
+Contributions across respected RISC-V organizations, spanning RTL, hardware documentation, verification tooling, and architectural certification:
 
 - **[OpenHW CVE2 (RISC-V core)](https://github.com/openhwgroup/cve2/pull/334)** (merged): a maintainer-approved fix for IEEE 1800 `$fatal` standards compliance in OpenHW's CVE2 RISC-V core, re-verified by the maintainer on Verilator and Questa. Official **OpenHW Foundation Contributor**.
 - **[OpenHW core-v-mcu](https://github.com/openhwgroup/core-v-mcu/pull/371)** (merged): documented how the APB Timer implements the RISC-V machine timer (`mtime` / `mtimecmp`, MTIME), including the register mapping and a firmware programming sequence, and, on maintainer review, added the standard safe three-step `mtimecmp` update to avoid a spurious machine timer interrupt. Grounded in the RTL.
-- **[CHIPS Alliance riscv-dv](https://github.com/chipsalliance/riscv-dv/pull/1035)** (open PR): a Python fix so the CSR test generator reads read-only CSRs instead of emitting illegal writes that hang the test, motivated by lowRISC/ibex#1337.
+- **[CHIPS Alliance riscv-dv](https://github.com/chipsalliance/riscv-dv/pull/1035)** (approved): a Python fix so the CSR test generator reads read-only CSRs instead of emitting illegal writes that hang the test, motivated by lowRISC/ibex#1337.
+- **[RISC-V ACT4 on CORE-V Wally](https://github.com/riscv/riscv-arch-test)** (OpenHW, in progress): bringing up RISC-V International's Architectural Certification Tests (ACT4) on the CORE-V Wally core; generated self-checking test ELFs from the Sail reference model, built the Verilator model, and ran the rv32imc suite to 95/95 pass.
 
 ---
 
