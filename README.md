@@ -1,7 +1,7 @@
 <h1 align="center">AVINASH KOLLU</h1>
 
 <p align="center">
-  <b>Silicon / RTL Design Engineer</b> &nbsp;|&nbsp; Electronics &amp; Communication Engineering (2026)
+  <b>Design Verification / RTL Design Engineer</b> &nbsp;|&nbsp; Electronics &amp; Communication Engineering (2026)
 </p>
 
 <p align="center">
@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="mailto:avinashkollu123@gmail.com"><img src="https://img.shields.io/badge/Email-avinashkollu123%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white"></a>
-  <a href="https://github.com/openhwgroup/cve2/pull/334"><img src="https://img.shields.io/badge/OpenHW-CVE2%20Contributor-1f6feb?style=flat-square&logo=github&logoColor=white"></a>
+  <a href="mailto:aviinash.kollu@gmail.com"><img src="https://img.shields.io/badge/Email-aviinash.kollu%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="https://github.com/search?q=author%3Aavinashkollu-git+is%3Apr+is%3Amerged&type=pullrequests"><img src="https://img.shields.io/badge/OpenHW-3%20merged%20PRs-1f6feb?style=flat-square&logo=github&logoColor=white"></a>
   <img src="https://img.shields.io/badge/Focus-RTL%20%7C%20VLSI%20%7C%20Computer%20Architecture-1f6feb?style=flat-square">
 </p>
 
@@ -26,7 +26,7 @@
 
 I work with a fully open-source hardware flow: **Icarus Verilog** and **Verilator**
 for simulation, the **Accellera UVM** library for constrained-random verification,
-**Yosys + yosys-smtbmc + z3** for synthesis checks and formal proofs, and **GTKWave**
+**Yosys + SymbiYosys (yosys-smtbmc, z3)** for synthesis checks and formal proofs, and **GTKWave**
 for waveforms. Every project *simulates*, *synthesizes*, and where it matters, is
 *formally proven*.
 
@@ -62,10 +62,12 @@ analysis), applied to real inference on Apple Silicon.
 
 Contributions across respected RISC-V organizations, spanning RTL, hardware documentation, verification tooling, and architectural certification:
 
+- **[OpenHW CV32E40P (RISC-V core)](https://github.com/openhwfoundation/cv32e40p/pull/1072)** (merged): fixed the controller formal bind, which connected the assertions to clock and reset signals that do not exist in the controller, so the controller assertions had no working clock.
+- **[OpenHW CV32E40P formal assertion](https://github.com/openhwfoundation/cv32e40p/pull/1073)** (open): an SVA property for an unreachable controller state (issue #1010), proven with Yosys + SymbiYosys, checked non-vacuous with cover checks, and shown to catch an injected RTL bug.
 - **[OpenHW CVE2 (RISC-V core)](https://github.com/openhwgroup/cve2/pull/334)** (merged): a maintainer-approved fix for IEEE 1800 `$fatal` standards compliance in OpenHW's CVE2 RISC-V core, re-verified by the maintainer on Verilator and Questa. Official **OpenHW Foundation Contributor**.
 - **[OpenHW core-v-mcu](https://github.com/openhwgroup/core-v-mcu/pull/371)** (merged): documented how the APB Timer implements the RISC-V machine timer (`mtime` / `mtimecmp`, MTIME), including the register mapping and a firmware programming sequence, and, on maintainer review, added the standard safe three-step `mtimecmp` update to avoid a spurious machine timer interrupt. Grounded in the RTL.
 - **[CHIPS Alliance riscv-dv](https://github.com/chipsalliance/riscv-dv/pull/1035)** (approved): a Python fix so the CSR test generator reads read-only CSRs instead of emitting illegal writes that hang the test, motivated by lowRISC/ibex#1337.
-- **[RISC-V ACT4 on CORE-V Wally](https://github.com/riscv/riscv-arch-test)** (OpenHW, in progress): bringing up RISC-V International's Architectural Certification Tests (ACT4) on the CORE-V Wally core; generated self-checking test ELFs from the Sail reference model, built the Verilator model, and ran the rv32imc suite to 95/95 pass.
+- **[RISC-V ACT4 on CORE-V Wally](https://github.com/riscv/riscv-arch-test)** (OpenHW, in progress): bringing up RISC-V International's Architectural Certification Tests (ACT4) on the CORE-V Wally core; generated self-checking test ELFs from the Sail reference model, built the Verilator model, and ran the rv32imc suite to 95/95 pass (rv64gc 1969/1976). Also ran ACT4 on CV32E40P (94/94) and built its run flow.
 
 ---
 
@@ -75,7 +77,7 @@ Contributions across respected RISC-V organizations, spanning RTL, hardware docu
   <img src="https://img.shields.io/badge/Verilog-HDL-orange?style=flat-square">
   <img src="https://img.shields.io/badge/SystemVerilog-HDL-orange?style=flat-square">
   <img src="https://img.shields.io/badge/UVM-verification-e11d48?style=flat-square">
-  <img src="https://img.shields.io/badge/Formal-yosys--smtbmc%20%2B%20z3-8b5cf6?style=flat-square">
+  <img src="https://img.shields.io/badge/Formal-SVA%20%7C%20SymbiYosys-8b5cf6?style=flat-square">
   <img src="https://img.shields.io/badge/RISC--V-RV32I-283272?style=flat-square&logo=riscv&logoColor=white">
   <img src="https://img.shields.io/badge/Verilator-sim-3fb950?style=flat-square">
   <img src="https://img.shields.io/badge/Icarus%20Verilog-sim-3fb950?style=flat-square">
@@ -94,4 +96,4 @@ Contributions across respected RISC-V organizations, spanning RTL, hardware docu
   <img src="https://github-readme-stats.vercel.app/api?username=avinashkollu-git&show_icons=true&hide_border=true&theme=github_dark" height="150">
 </p>
 
-<p align="center"><i>Open to Silicon / RTL Design Engineer (New Grad) roles.</i></p>
+<p align="center"><i>Open to Design Verification and RTL Design Engineer (New Grad) roles: India, abroad, and remote.</i></p>
